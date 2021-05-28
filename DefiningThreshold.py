@@ -171,4 +171,5 @@ class ThresholdOptimizer:
         print("Precision: {:.3f}".format(metrics.precision_score(self._labels, adjusted_labels)))
         print("Recall: {:.3f}".format(metrics.recall_score(self._labels,adjusted_labels)))
         print("F1: {:.3f}".format(metrics.f1_score(self._labels,adjusted_labels)))
+        print("AUC: {:.3f}".format(metrics.roc_auc_score(self._labels,adjusted_labels)))
         print("----------------------------")
